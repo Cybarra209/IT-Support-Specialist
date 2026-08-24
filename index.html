@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>IT Support Specialist Flashcards</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="header-content">
+            <div>
+                <h1>IT Support Specialist</h1>
+                <p>Interview Flashcards</p>
+            </div>
+
+            <button id="themeButton" class="theme-button">
+                🌙
+            </button>
+        </div>
+    </header>
+
+
+    <main class="container">
+
+        <!-- Statistics -->
+        <section class="stats">
+
+            <div class="stat-card">
+                <span class="stat-number" id="totalQuestions">25</span>
+                <span class="stat-label">Questions</span>
+            </div>
+
+            <div class="stat-card known">
+                <span class="stat-number" id="knownCount">0</span>
+                <span class="stat-label">Known</span>
+            </div>
+
+            <div class="stat-card study">
+                <span class="stat-number" id="studyCount">0</span>
+                <span class="stat-label">Study</span>
+            </div>
+
+        </section>
+
+
+        <!-- Progress -->
+        <section class="progress-section">
+
+            <div class="progress-info">
+                <span id="progressText">Question 1 of 25</span>
+                <span id="progressPercent">4%</span>
+            </div>
+
+            <div class="progress-bar">
+                <div id="progressFill"></div>
+            </div>
+
+        </section>
+
+
+        <!-- Search -->
+        <section class="search-section">
+
+            <input
+                type="text"
+                id="searchInput"
+                placeholder="Search questions..."
+            >
+
+        </section>
+
+
+        <!-- Flashcard -->
+        <section class="flashcard-container">
+
+            <div
+                class="flashcard"
+                id="flashcard"
+                tabindex="0"
+            >
+
+                <div class="card-inner">
+
+                    <!-- Front -->
+                    <div class="card-face card-front">
+
+                        <div class="card-number" id="cardNumber">
+                            Question 1
+                        </div>
+
+                        <div class="question" id="question">
+                            Loading question...
+                        </div>
+
+                        <div class="click-hint">
+                            Click the card to reveal the answer
+                        </div>
+
+                    </div>
+
+
+                    <!-- Back -->
+                    <div class="card-face card-back">
+
+                        <div class="answer-label">
+                            ANSWER
+                        </div>
+
+                        <div class="answer" id="answer">
+                            Loading answer...
+                        </div>
+
+                        <div class="click-hint">
+                            Click the card to flip back
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Rating -->
+        <section class="rating-section">
+
+            <p>How well did you know this?</p>
+
+            <div class="rating-buttons">
+
+                <button
+                    id="studyButton"
+                    class="rating-button study-button"
+                >
+                    ❌ Need to Study
+                </button>
+
+                <button
+                    id="knownButton"
+                    class="rating-button known-button"
+                >
+                    ✅ I Knew It
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- Navigation -->
+        <section class="navigation">
+
+            <button
+                id="previousButton"
+                class="nav-button"
+            >
+                ← Previous
+            </button>
+
+            <button
+                id="shuffleButton"
+                class="nav-button"
+            >
+                🔀 Shuffle
+            </button>
+
+            <button
+                id="nextButton"
+                class="nav-button"
+            >
+                Next →
+            </button>
+
+        </section>
+
+
+        <!-- Study Modes -->
+        <section class="study-modes">
+
+            <h2>Study Mode</h2>
+
+            <div class="mode-buttons">
+
+                <button
+                    id="allButton"
+                    class="mode-button active"
+                >
+                    📚 All Questions
+                </button>
+
+                <button
+                    id="wrongButton"
+                    class="mode-button"
+                >
+                    ❌ Study Missed
+                </button>
+
+                <button
+                    id="randomButton"
+                    class="mode-button"
+                >
+                    🎲 Random Quiz
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- Keyboard Help -->
+        <section class="keyboard-help">
+
+            <h3>⌨️ Keyboard Shortcuts</h3>
+
+            <div class="shortcuts">
+
+                <span>
+                    <kbd>Space</kbd>
+                    Flip
+                </span>
+
+                <span>
+                    <kbd>←</kbd>
+                    Previous
+                </span>
+
+                <span>
+                    <kbd>→</kbd>
+                    Next
+                </span>
+
+                <span>
+                    <kbd>1</kbd>
+                    Need to Study
+                </span>
+
+                <span>
+                    <kbd>2</kbd>
+                    I Knew It
+                </span>
+
+            </div>
+
+        </section>
+
+
+        <!-- Reset -->
+        <section class="reset-section">
+
+            <button
+                id="resetButton"
+                class="reset-button"
+            >
+                Reset Progress
+            </button>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+
+        <p>
+            IT Support Specialist Interview Study Guide
+        </p>
+
+        <p>
+            25 Flashcards
+        </p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
